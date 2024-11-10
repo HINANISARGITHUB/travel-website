@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
 
-export function Header() {
+
+export default function Header() {
   return (
     <header className="flex py-8 ">
       {/* logo */}
@@ -14,28 +15,33 @@ export function Header() {
       {/* links */}
       
         <nav>
-          <ul className="flex gap-16 text-lg ml-36 mt-2">
+          <ul className="flex gap-12 text-lg ml-40 mt-2">
+
+          <li className="hover:text-orange-300">
+              <Link href= "/">Home</Link>
+            </li>
+
             <li className="hover:text-orange-300">
-              <Link href="">Destination</Link>
+              <Link href= "/destination">Destination</Link>
             </li>
             <li className="hover:text-orange-300">
-              <Link href="">Hotels</Link>
+              <Link href="/hotels">Hotels</Link>
             </li>
             <li className="hover:text-orange-300">
-              <Link href="">Flights</Link>
+              <Link href="/flight">Flights</Link>
             </li>
             <li className="hover:text-orange-300">
-              <Link href="">Bookings</Link>
+              <Link href="/bookings">Bookings</Link>
             </li>
           </ul>
         </nav>
      
       {/* login */}
-      <div className="flex  w-48 justify-center py-2 text-lg ml-8 mr-2">
+      <div className="flex  w-48 justify-center py-2 text-lg ml-4 mr-2">
         <h2 className="ml-11">Login</h2>
       </div>
      <div>
-        <button className="bg-orange-300 rounded-xl py-2 w-28 text-lg">sign up</button>
+        <button className="bg-orange-300 rounded-xl py-2 w-24 text-lg">sign up</button>
       </div>
     </header>
   );

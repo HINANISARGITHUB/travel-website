@@ -6,7 +6,7 @@ import { faFacebook, faSquareInstagram, faTwitter } from "@fortawesome/free-bran
 
 const Footer = () => {
   return (
-    <section className="mt-28 flex gap-24 ml-60">
+    <section className="mt-40 flex gap-24 ml-60">
     <div className="">
         <table className="border-separate border-spacing-1">
           <tr className="">
